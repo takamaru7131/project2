@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/bass.css">
+   <!--cssはフォルダを指定する-->
+   
+   <title>Document</title>
+</head>
+<body>
+
+   <!--header内の子要素にclassでcss指定する。idの場合はひとつしか使えないので。-->
+   <header class="header">
+
+ <!-- ナビのための部屋をdivで作る。３つを指定-->
+   <div class="flex is-between is-center">      
+
+
+  <!--divで部屋を作って左右に分ける-->    
+    <div class="header-left">
+      <h1 class="header-seo">お気軽に相談ください!!</h1>
+      <h2 class="header-seo2">無料コンサルティング</h2>
+      <p class="header-seo3">お金の悩み解決します。</p>
+
+<!--画像はaltにより画像エラーでも文字が表示される、文字コピーも可能-->
+<p class="header-logo">
+      <img src="img/logo.png" width="165"  alt="CAMPnavi">
+   </p>
+</div>
+
+   <div class="header-right">
+
+   
+      <p class="header-kaisha">TMプロジェクト</p>   
+
+   <p class="header-address">tel:000-0000-000</p>
+
+   <!-- 右に降った文字の1部色を変える -->
+   <address><span class="tete">住所：</span>神奈川県秦野市</address>
+
+   </div>
+   </div>
+
+
+   <!-- ナビの部屋。ul要素にもflexで横並びにする -->
+   <nav class="gnav">
+      <ul class="flex">
+         <li><a href="https://www.google.com/">ホーム</a></li>
+         <li><a href="">商品一覧</a></li>
+         <li><a href="">会社概要</a></li>
+         <li><a href="">よくある質問</a></li>
+         <li><a href="">お問い合せ</a></li>
+
+      </ul>
+
+   </nav>
+   </header>
+   <!-- ヘッダー終わり -->
+
+
+   <!-- ここからメイン画像と商品一覧 -->
+   <div class="mv"><img src="img/main3.jpg" alt="" width="100%"></div>
+</div>
+
+<!-- 商品一覧の部屋を作る -->
+<section class="item-wrap">
+
+   <!-- itemsだけ色を変える -->
+   <h2 class="item-se-title"><span>items</span>商品一覧</h2>
+
+   <!-- cssの1番上に書いたflex、is-betweenの横並び・幅調整する指定を使う＠ -->
+   <div class="flex is-between">
+
+   <!-- テントの枠 -->
+   <section class="item-list">
+<p><img src="img/items01.jpg" alt="">
+</p>
+<h3 class="item-list-title">テント</h3>
+<p>説明文</p>
+
+   </section>
+
+   <!-- 寝袋の枠 -->
+   <section class="item-list">
+      <p><img src="img/items02.jpg" alt="">
+      </p>
+      <h3 class="item-list-title">寝袋</h3>
+      <p>説明文</p>
+      
+         </section>
+
+   <!-- グリルの枠 -->
+         <section class="item-list">
+            <p><img src="img/items03.jpg" alt="">
+            </p>
+            <h3 class="item-list-title">グリル</h3>
+            <p>説明文</p>
+            
+               </section>
+
+   <!-- flexの指定を閉じる             -->
+   </div>
+
+   <!-- 商品一覧ボタンを作る -->
+   <p class="main-btn"><a href="#">商品一覧へ</a></p>
+
+
+</section>
+
+<!-- ここからお知らせの部屋 -->
+<section class="news-wrap">
+
+   <!-- newsだけ色を変える -->
+   <h2 class="item-se-title"><span>news</span>お知らせ</h2>
+
+
+      <!-- お知らせの過剰書きに対する小要素 -->
+      <!-- 同じ文字を複数選択は<command>+d -->
+   <dl class="news-list">
+      <dt>2020.12.20</dt>
+      <dd>新着情報がはいります。</dd>
+   </dl>
+
+   <dl class="news-list">
+      <dt>2020.12.20</dt>
+      <dd>新着情報がはいります。</dd>
+   </dl>
+
+   <dl class="news-list">
+      <dt>2020.12.20</dt>
+      <dd>新着情報がはいります。</dd>
+   </dl>
+
+   <dl class="news-list">
+      <dt>2020.12.20</dt>
+      <dd>新着情報がはいります。</dd>
+   </dl>
+
+    <!-- 商品一覧ボタンを作る -->
+    <p class="main-btn"><a href="#">お知らせ一覧へ</a></p>
+
+</section>
+
+<!-- ここからフッター -->
+<footer class="footer">
+
+   <!-- flexで以下の文字が横並びになる -->
+   <div class="footer-inner flex">
+
+      <!-- フッターの枠の中に更に部屋を作る -->
+      <div class="footer-address">
+         <p class="footer-logo">TMプロジェクト</p>   
+
+         <p class="footer-tel">tel:000-0000-000</p>
+
+         <!-- 右に降った文字の1部色を変える -->
+         <address>住所：神奈川県秦野市</address>
+
+      </div>
+
+   <!-- フッターの部屋。ul要素にもflexで横並びにする -->
+   <nav class="footer-nav flex">
+      <ul class="footer-nav-list">
+         <li><a href="https://www.google.com/">ホーム</a></li>
+         <li><a href="">商品一覧</a></li>
+         <li><a href="">会社概要</a></li>
+      </ul>
+   
+      <ul class="footer-nav-list">
+         <li><a href="">よくある質問</a></li>
+         <li><a href="">お問い合せ</a></li>
+
+      </ul>
+   </nav>
+</div>
+
+<!-- smallは注釈を表す -->
+<p class="copy-light"><small>copylight@TM-project</small></p>
+</footer>
+
+</body>
+
+</body>
+</html> 
