@@ -1,0 +1,317 @@
+
+
+
+/* display: flexを使い回せるようにする */
+.flex{
+	display: flex;
+}
+
+.is-between{
+justify-content: space-between;	
+}
+
+.is-center{
+	align-items: center;
+}
+
+/* ここまで共通スタイル */
+
+
+/* 商品一覧ボタンのスタイル。
+この形は先にも使うのでここに配置 */
+.main-btn{
+	width: 240px;
+	margin:  60px auto 0;
+	
+	background: #ffe372;
+}
+
+/* 上のflexのdisplayが効いてしまうのでブロックする */
+.main-btn a{
+	display: block;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	color: #333333;
+	font-weight: bold;
+	background:#ffe372 ;
+
+	/* アニメーションを付け1秒後にフォバーさせる */
+	transition: all 1s;
+
+	/* ボタンを角丸にする */
+	border-radius: 5px;
+
+}
+
+/* ボタンにフォバーをつける */
+.main-btn a:hover{
+	background: #009944;
+}
+
+.header{
+/*以下で横並びにする。色々な種類がある。*/
+	/* display: flex;
+	justify-content: space-between; */
+
+
+/*横幅にブロックを置いて横に上手く余白を付ける*/	
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+	/* background: #ff; */
+}
+
+.header-right{
+	background-color:#ffe372;
+}
+
+.header-seo{
+	font-size: 30px;
+	
+}
+.header-seo2{
+	font-size: 20px;
+	color: #ff0000;
+}
+
+
+.header-seo3{
+	font-size: 15px;
+	
+}
+
+.header-tel{
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 300px;
+/*文字の間隔*/
+	letter-spacing: 0.1em;
+
+}
+
+.header-kaisha{
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.header-address{
+	font-weight: bold;
+}
+
+/* 右に降った文字の1部色を変える  */
+.tete{
+	color: #ff0000;
+}
+
+/* ヘッダーの終わり。コメントはショートカットcommand+?*/
+
+/* ナビの設定はここから */
+.gnav{
+	margin-top: 40px;
+}
+/* リンク文字部分の間隔を両端に余白もつけてくれる */
+.gnav ul{
+	justify-content: space-around;
+
+}
+
+/* リンク文字の幅、縦線の太さ・種類・色を指定 */
+.gnav li{
+width: 160px;
+border-right: 1px solid #333333;
+}
+
+/* naviの文字にカーソル時に下線を引く */
+.gnav li a:hover{
+	text-decoration:underline;
+}
+
+/* li小要素として、１番右恥の縦線を無しにする */
+.gnav li:last-child{
+	border-right: none;
+}
+
+/* 文字の種類、ブロックにする、中央配置、配色辞め */
+.gnav a{
+font-weight: bold;
+display: block;
+text-align: center;
+text-decoration: none;
+/* columns: #333333; */
+color: #333333;
+/* background-color: cornflowerblue; */
+/* アニメーションを付け1秒後にフォバーさせる */
+transition: all 1s;
+
+}
+
+/* 文字に対する疑似要素としてリンク後の色を指定 
+*/
+.gnav a:hover{
+color: #009944;
+}
+/* 商品一覧のページであることをフォバーにする  */
+.gnav .active a{
+	color: #009944;
+}
+
+/* ヘッダー終わり */
+
+/* ここからメイン画像と商品一覧 */
+
+/* 画像の大きさを調整 */
+.mv{
+	margin-top: 40px;
+	margin-right: 200px;
+	margin-left: 200px;
+
+}
+
+.item-wrap{
+	width: 960px;
+
+	/* 全ての余白を一括設定する */
+	margin: 80px auto;
+}
+
+.item-se-title{
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 40px;
+	text-align: center;
+	color: #009944;
+}
+
+/* spanの部分だけの指定 */
+.item-se-title span{
+	font-size: 18px;
+	/* 改行 */
+	display: block;
+	text-align: center;
+	color: #6f5008;
+
+}
+
+.item-list{
+width: 300px;
+}
+
+.item-list-title{
+	font-size: 20px;
+	font-weight: bold;
+	margin: 15px auto;
+	text-align: center;
+}
+
+/* 商品一覧終わり */
+
+/* お知らせの指定 */
+.news-wrap{
+	width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.news-list{
+/* 文字を横並びにする	 */
+	display: flex;
+	/* 文字の下に余白をつける */
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	color: #080808;
+
+/* 点線の指定	 */
+	border-bottom: 3px dashed #c6c6c6;
+}
+
+/* 日付けと文字の間空ける */
+.news-list dt{
+	margin-right: 30px;
+	color: #080808;
+	
+}
+
+/* .news-listここまで */
+
+/* フッターの装飾 */
+
+.footer{
+	color: #ffffff;
+	background:#db7807 ;
+	margin-top: 60px;
+	padding: 60px 0 20px
+	
+}
+
+.footer-a{
+	color: #ffffff;
+}
+
+.footer-inner{
+	width: 960px;
+	/* margin-left: auto;
+	margin-right: auto; */
+	margin: 0 auto 80px;
+	
+}
+
+.footer-logo{
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 10px;
+
+}
+
+.footer-tel{
+	/*文字の間隔*/
+	letter-spacing: 0.1em;
+}
+
+.footer-address{
+	margin-right: 120px;
+}
+
+.footer-nav-list{
+	margin-right: 100px;
+}
+
+.footer-nav-list li{
+	margin-bottom: 20px;
+}
+/* フッターの文字にカーソル時に下線を引く */
+.footer-nav-list li a:hover{
+	text-decoration:underline;
+}
+	
+.copy-light{
+	text-align: center;
+}
+
+/* フッター終わり
+
+商品一覧ページ */
+.item-title{
+	font-size: 22px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.item-title span{
+	color: rgb(102, 30, 30);
+	font-size: 36px;
+	text-align: left;
+	display: block;
+}
+
+.item-card{
+	width: 290px;
+	margin-top: 40px;
+}
+
+.item-card-body{
+	padding: 20px;
+	background: #c2bdaa;
+	
+}
